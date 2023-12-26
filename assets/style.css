@@ -1,0 +1,180 @@
+/* Defining root variables for later use */
+
+:root {
+    --light-primary: #EDEDF5;
+    --dark-primary: #32343C;
+    --header-primary: #4D5B78;
+    --contrast-primary: #9EC9CC;
+    --title: 50px;
+    --vertical-border: 5px solid var(--header-primary);
+    --small-img: 48%;
+    --img-height: 100px;
+}
+
+/* Universal selectors - apply to entire HTML unless otherwise specified */
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Element selectors: apply to each specified element within HTML structure */
+
+header {
+    background-color: var(--dark-primary);
+    color: var(--contrast-primary);
+    position: relative;
+    width: auto;
+}
+
+header h1 {
+    background-color: var(--contrast-primary);
+    color: var(--dark-primary);
+    display: inline-block;
+    padding: 0 0.75% 0 4%;
+    font-size: var(--title);
+    margin: 5px 0 15px 0;
+}
+
+header ul {
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    right: 75px;
+    top: 8px;
+}
+
+ul a {
+    color: var(--contrast-primary);
+    text-decoration: none;
+}
+
+header li {
+    float: inline-start;
+    font-size: 22px;
+    padding: 0px 10px 4px 10px;
+    border-bottom: 4px solid var(--contrast-primary);
+    margin-right: 10px;
+}
+
+section h3 {
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    background-color: var(--contrast-primary);
+    font-size: 36px;
+    padding: 5px 10px 5px 10px;
+}
+
+main {
+    margin-top: 50px;
+    color: var(--header-primary);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+object {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0.5%;
+    border: 5px solid var(--contrast-primary);
+    background-size: cover;
+    padding-top: 25px;
+   
+}
+
+figure {
+    width: max-content;
+    padding: 0px 5px 0px 5px;
+    background-color: var(--contrast-primary);
+    color: var(--dark-primary);
+    margin-left: 0;
+    margin-bottom: 20px;
+    line-height: 0.6;
+}
+
+figure a {
+    text-decoration: none;
+    color: var(--dark-primary);
+    font-size: 24px;
+}
+
+.banner {
+    position: relative;
+    background-image: url("./banner.jpg");
+    background-size: cover;
+    background-position: 15%;
+    height: 200px;
+    color: var(--dark-primary);
+}
+
+.banner img {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    height: 95px;
+    transform: rotate(5deg);
+    background: none;
+    z-index: 1;
+}
+
+.article-header {
+    width: 25%;
+    font-size: 36px;
+    text-align: right;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.article-header h2 {
+    margin-top: 0;
+}
+
+.right {
+    width: 70%;
+    padding-left: 2%;
+    border-left: var(--vertical-border);
+    margin-bottom: 20px;
+}
+
+.horiseon {
+    background-image: url("./horiseon.jpg");
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    bottom: 0px;
+}
+
+.prework {
+    background-image: url("./prework-study-guide.png");
+    width: var(--small-img);
+}
+
+.student-bio {
+    background-image: url("./student-bio-template.png");
+    width: var(--small-img);
+}
+
+.coming-soon {
+    background-image: url("./coming-soon.jpeg");
+    width: var(--small-img);
+    background-position: 2%;
+}
+
+object:hover {
+    opacity: .7;
+    cursor: pointer;
+}

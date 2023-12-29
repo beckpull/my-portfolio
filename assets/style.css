@@ -78,17 +78,20 @@ article {
     justify-content: space-between;
 }
 
+
 p {
     letter-spacing: 1px;
 }
 
-object {
-    display: inline-flex;
-    flex-wrap: wrap;
+article a {
+    background-size: cover; 
     margin: 0.5%;
     border: 5px solid var(--contrast-primary);  
-    padding-top: 25px;
     position: relative;
+}
+
+article a:hover {
+    opacity: .7;
 }
 
 figure {
@@ -106,6 +109,35 @@ figure a {
     color: var(--dark-primary);
     font-size: 24px;
 }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+footer ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+footer li {
+    float: inline-start;
+    font-size: 22px;
+    padding: 0px 10px 4px 10px;
+    border-bottom: 4px solid var(--header-primary);
+    margin-right: 50px;
+}
+
+footer ul a {
+    color: var(--dark-primary);
+    text-decoration: none;
+}
+
+/* Class selectors: apply to all elements specified with each class */
 
 .banner {
     position: relative;
@@ -131,7 +163,7 @@ figure a {
     font-size: 36px;
     text-align: right;
     padding-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: var(--header-primary);
 }
 
@@ -148,14 +180,26 @@ figure a {
 
 .first-page {
     width: 100%;
-    max-height: 600px;
-    object-fit: fill;
+    height: 600px;
+    background-image: url("./horiseon.jpg");
 }
 
 .smaller-page {
     width: 48%;
     height: 200px;
-    object-fit: cover;
+}
+
+.second-page {
+    background-image: url("./prework-study-guide.png");
+}
+
+.third-page {
+    background-image: url("./student-bio-template.png");
+}
+
+.coming-soon {
+    background-image: url("./coming-soon.jpeg");
+    background-position: 200px
 }
 
 .label {
@@ -163,36 +207,8 @@ figure a {
     bottom: 0px;
 }
 
-object:hover {
-    opacity: .7;
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    line-height: 1;
-    vertical-align: middle;
-   
-}
-
-footer ul {
-    padding-top: 20px;
-    list-style-type: none;
-    display: inline-flex;
-}
-
-footer li {
-    float: inline-start;
+.label h4 {
     font-size: 22px;
-    padding: 0px 10px 4px 10px;
-    border-bottom: 4px solid var(--header-primary);
-    margin-right: 50px;
-}
-
-footer ul a {
-    color: var(--dark-primary);
-    text-decoration: none;
 }
 
 .contact-links {

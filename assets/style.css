@@ -43,7 +43,7 @@ header ul {
     top: 8px;
 }
 
-ul a {
+header ul a {
     color: var(--contrast-primary);
     text-decoration: none;
 }
@@ -86,10 +86,9 @@ object {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 0.5%;
-    border: 5px solid var(--contrast-primary);
-    background-size: cover;
+    border: 5px solid var(--contrast-primary);  
     padding-top: 25px;
-   
+    position: relative;
 }
 
 figure {
@@ -133,6 +132,7 @@ figure a {
     text-align: right;
     padding-right: 20px;
     margin-bottom: 50px;
+    color: var(--header-primary);
 }
 
 .article-header h2 {
@@ -146,11 +146,16 @@ figure a {
     margin-bottom: 20px;
 }
 
-.horiseon {
-    background-image: url("./horiseon.jpg");
+.first-page {
     width: 100%;
-    height: 600px;
-    position: relative;
+    max-height: 600px;
+    object-fit: fill;
+}
+
+.smaller-page {
+    width: 48%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .label {
@@ -158,23 +163,41 @@ figure a {
     bottom: 0px;
 }
 
-.prework {
-    background-image: url("./prework-study-guide.png");
-    width: var(--small-img);
-}
-
-.student-bio {
-    background-image: url("./student-bio-template.png");
-    width: var(--small-img);
-}
-
-.coming-soon {
-    background-image: url("./coming-soon.jpeg");
-    width: var(--small-img);
-    background-position: 2%;
-}
-
 object:hover {
     opacity: .7;
-    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+   
+}
+
+footer ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+footer li {
+    float: inline-start;
+    font-size: 22px;
+    padding: 0px 10px 4px 10px;
+    border-bottom: 4px solid var(--header-primary);
+    margin-right: 50px;
+}
+
+footer ul a {
+    color: var(--dark-primary);
+    text-decoration: none;
+}
+
+.contact-links {
+    width: 70%;
+    padding-left: 2%;
+    border-left: var(--vertical-border);
+    margin-bottom: 75px;
 }

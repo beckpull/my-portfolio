@@ -8,7 +8,7 @@
     I WANT a deployed portfolio of my work samples 
     SO THAT any potential employers can review them and assess if I would be a good candidate for their open positions. 
 
-    This website is intended for anybody who might have any interest in utilizing my services, getting in touch, or using it as a template to create your own. 
+ >   This website is intended for anybody who might have any interest in utilizing my services, getting in touch, or using it as a template to create your own. 
 
 I am a junior software develepor in-the-making and I am very excited to be releasing my very own portfolio webpage! 
 

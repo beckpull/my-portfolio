@@ -19,6 +19,10 @@
 
 /* Element selectors: apply to each specified element within HTML structure */
 
+body {
+    margin: 0px;
+}
+
 header {
     background-color: var(--dark-primary);
     color: var(--contrast-primary);
@@ -26,7 +30,7 @@ header {
     width: auto;
 }
 
-header h1 {
+h1 {
     background-color: var(--contrast-primary);
     color: var(--dark-primary);
     display: inline-block;
@@ -35,7 +39,7 @@ header h1 {
     margin: 5px 0 15px 0;
 }
 
-header ul {
+nav ul {
     list-style-type: none;
     text-align: right;
     position: absolute;
@@ -43,17 +47,27 @@ header ul {
     top: 8px;
 }
 
-header ul a {
-    color: var(--contrast-primary);
-    text-decoration: none;
-}
-
-header li {
+nav li {
     float: inline-start;
     font-size: 22px;
     padding: 0px 10px 4px 10px;
     border-bottom: 4px solid var(--contrast-primary);
     margin-right: 10px;
+}
+
+nav a {
+    color: var(--contrast-primary);
+    text-decoration: none;
+}
+
+section img {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    height: 215px;
+    transform: rotate(-15deg);
+    background: none;
+    z-index: 1;
 }
 
 section h3 {
@@ -132,7 +146,7 @@ footer li {
     margin-right: 50px;
 }
 
-footer ul a {
+footer a {
     color: var(--dark-primary);
     text-decoration: none;
 }
@@ -146,16 +160,6 @@ footer ul a {
     background-position: 15%;
     height: 200px;
     color: var(--dark-primary);
-}
-
-.banner img {
-    position: absolute;
-    right: 15px;
-    top: 35px;
-    height: 95px;
-    transform: rotate(5deg);
-    background: none;
-    z-index: 1;
 }
 
 .article-header {
@@ -175,7 +179,7 @@ footer ul a {
     width: 70%;
     padding-left: 2%;
     border-left: var(--vertical-border);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .first-page {
@@ -216,4 +220,93 @@ footer ul a {
     padding-left: 2%;
     border-left: var(--vertical-border);
     margin-bottom: 75px;
+}
+
+/* Media queries: to allow my webpage to maintain it's functionality when screen width decreases */
+
+@media screen and (max-width: 1330px) {
+
+    header {
+        padding: 0;
+    }
+    
+    nav ul {
+        position: relative;
+        display: block;
+        width: 104%;
+        margin: 0px;
+    }
+
+    nav li {
+        float: none;
+        padding: 5px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    section img {
+        top: 50px;
+        left: 76%;
+        margin: 0px;
+        transform: rotate(7deg);
+    }
+
+    .article-header {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .right {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .first-page  {
+        max-width: 100%;
+    }
+
+    .smaller-page {
+        width: 100%;
+    }
+  
+    .contact-links {
+        width: 100%;
+    }
+
+    footer ul {
+        display: block;
+        text-align: center;
+    }
+    
+    footer li {
+        float: none;
+        padding: 10px;
+    }    
+
+}
+
+@media screen and (max-width:618px) {
+        
+    section h3 {
+        position: relative;
+        padding: 0px;
+        margin: 50px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    section img {
+        height: 150px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width:618px) {
+
+    section img {
+        left: 60%;
+        top: 110px;
+    }
 }

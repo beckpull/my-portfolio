@@ -104,7 +104,7 @@ article a {
     position: relative;
 }
 
-article a:hover {
+article a:hover, article a:active {
     opacity: .7;
 }
 

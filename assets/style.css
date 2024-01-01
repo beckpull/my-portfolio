@@ -104,10 +104,6 @@ article a {
     position: relative;
 }
 
-article a:hover, article a:active {
-    opacity: .7;
-}
-
 figure {
     width: max-content;
     padding: 0px 5px 0px 5px;
@@ -157,6 +153,12 @@ h5 {
     line-height: 50px;
     margin: 0px;
     color: #fdfdfd
+}
+
+/* Pseudo-class selector - targets an item (article links) only when user is hovering or when link is active (for mobile-devices) */
+
+article a:hover, article a:active {
+    opacity: .7;
 }
 
 /* Class selectors: apply to all elements specified with each class */

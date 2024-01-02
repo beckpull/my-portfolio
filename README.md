@@ -2,13 +2,15 @@
 
 > Thank you for visiting! 😃
 ![Avatar of Rebecca](./assets/avatar.png)
- 
+
 ### User Story:
     AS A junior software developer,
     I WANT a deployed portfolio of my work samples 
     SO THAT any potential employers can review them and assess if I would be a good candidate for their open positions. 
 
  >   This website is intended for anybody who might have any interest in utilizing my services, getting in touch, or using it as a template to create your own. 
+
+#### Click [here](https://beckpull.github.io/my-portfolio/) to visit my website!
 
 I am a junior software develepor in-the-making and I am very excited to be releasing my very own portfolio webpage! 
 
@@ -25,6 +27,7 @@ I am still learning the fundamental skills I will need to be able to fill any ro
 
 
 ![Mobile-friendly webpage preview](./assets/portfolio-responsive.jpg)
+
 
 #### Contributors:
 

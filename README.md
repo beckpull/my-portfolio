@@ -10,7 +10,6 @@
 
  >   This website is intended for anybody who might have any interest in utilizing my services, getting in touch, or using it as a template to create your own. 
 
-#### Click [here](https://beckpull.github.io/my-portfolio/) to visit my website!
 
 I am a junior software develepor in-the-making and I am very excited to be releasing my very own portfolio webpage! 
 
@@ -28,9 +27,14 @@ I am still learning the fundamental skills I will need to be able to fill any ro
 
 ![Mobile-friendly webpage preview](./assets/portfolio-responsive.jpg)
 
+### License:
+This work is distributed under the MIT License. See LICENSE.txt for more info.
 
 #### Contributors:
 
 * **Rebecca Feltman** 
 
     >Check me out on [GitHub](https://github.com/beckpull) or shoot me an [email](mailto:beckpull@icloud.com) if you have any website needs!
+
+#### Click [here](https://beckpull.github.io/my-portfolio/) to visit my website!
+URL: https://beckpull.github.io/my-portfolio/

@@ -229,7 +229,7 @@ article a:hover, article a:active {
     width: 70%;
     padding-left: 2%;
     border-left: var(--vertical-border);
-    margin-bottom: 25px;
+    margin-bottom: 75px;
 }
 
 /* Media queries: to allow my webpage to maintain it's functionality when screen width decreases */
